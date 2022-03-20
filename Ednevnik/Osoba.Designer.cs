@@ -159,7 +159,7 @@
             this.txt_ime.Location = new System.Drawing.Point(171, 66);
             this.txt_ime.Margin = new System.Windows.Forms.Padding(2);
             this.txt_ime.Name = "txt_ime";
-            this.txt_ime.Size = new System.Drawing.Size(157, 32);
+            this.txt_ime.Size = new System.Drawing.Size(212, 32);
             this.txt_ime.TabIndex = 9;
             // 
             // txt_prezime
@@ -168,7 +168,7 @@
             this.txt_prezime.Location = new System.Drawing.Point(171, 102);
             this.txt_prezime.Margin = new System.Windows.Forms.Padding(2);
             this.txt_prezime.Name = "txt_prezime";
-            this.txt_prezime.Size = new System.Drawing.Size(157, 32);
+            this.txt_prezime.Size = new System.Drawing.Size(212, 32);
             this.txt_prezime.TabIndex = 10;
             // 
             // txt_adresa
@@ -177,7 +177,7 @@
             this.txt_adresa.Location = new System.Drawing.Point(171, 141);
             this.txt_adresa.Margin = new System.Windows.Forms.Padding(2);
             this.txt_adresa.Name = "txt_adresa";
-            this.txt_adresa.Size = new System.Drawing.Size(157, 32);
+            this.txt_adresa.Size = new System.Drawing.Size(212, 32);
             this.txt_adresa.TabIndex = 11;
             // 
             // txt_jmbg
@@ -186,7 +186,7 @@
             this.txt_jmbg.Location = new System.Drawing.Point(171, 177);
             this.txt_jmbg.Margin = new System.Windows.Forms.Padding(2);
             this.txt_jmbg.Name = "txt_jmbg";
-            this.txt_jmbg.Size = new System.Drawing.Size(157, 32);
+            this.txt_jmbg.Size = new System.Drawing.Size(212, 32);
             this.txt_jmbg.TabIndex = 12;
             // 
             // txt_email
@@ -195,7 +195,7 @@
             this.txt_email.Location = new System.Drawing.Point(171, 213);
             this.txt_email.Margin = new System.Windows.Forms.Padding(2);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(157, 32);
+            this.txt_email.Size = new System.Drawing.Size(212, 32);
             this.txt_email.TabIndex = 13;
             // 
             // txt_pass
@@ -204,7 +204,7 @@
             this.txt_pass.Location = new System.Drawing.Point(171, 249);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(2);
             this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(157, 32);
+            this.txt_pass.Size = new System.Drawing.Size(212, 32);
             this.txt_pass.TabIndex = 14;
             // 
             // txt_uloga
@@ -213,12 +213,12 @@
             this.txt_uloga.Location = new System.Drawing.Point(171, 285);
             this.txt_uloga.Margin = new System.Windows.Forms.Padding(2);
             this.txt_uloga.Name = "txt_uloga";
-            this.txt_uloga.Size = new System.Drawing.Size(157, 32);
+            this.txt_uloga.Size = new System.Drawing.Size(212, 32);
             this.txt_uloga.TabIndex = 15;
             // 
             // btn_prvi
             // 
-            this.btn_prvi.Location = new System.Drawing.Point(399, 123);
+            this.btn_prvi.Location = new System.Drawing.Point(452, 124);
             this.btn_prvi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_prvi.Name = "btn_prvi";
             this.btn_prvi.Size = new System.Drawing.Size(91, 32);
@@ -229,7 +229,7 @@
             // 
             // btn_prethodni
             // 
-            this.btn_prethodni.Location = new System.Drawing.Point(545, 123);
+            this.btn_prethodni.Location = new System.Drawing.Point(598, 124);
             this.btn_prethodni.Margin = new System.Windows.Forms.Padding(2);
             this.btn_prethodni.Name = "btn_prethodni";
             this.btn_prethodni.Size = new System.Drawing.Size(72, 32);
@@ -240,7 +240,7 @@
             // 
             // btn_sledeci
             // 
-            this.btn_sledeci.Location = new System.Drawing.Point(674, 123);
+            this.btn_sledeci.Location = new System.Drawing.Point(727, 124);
             this.btn_sledeci.Margin = new System.Windows.Forms.Padding(2);
             this.btn_sledeci.Name = "btn_sledeci";
             this.btn_sledeci.Size = new System.Drawing.Size(72, 32);
@@ -251,7 +251,7 @@
             // 
             // btn_poslednji
             // 
-            this.btn_poslednji.Location = new System.Drawing.Point(795, 123);
+            this.btn_poslednji.Location = new System.Drawing.Point(848, 124);
             this.btn_poslednji.Margin = new System.Windows.Forms.Padding(2);
             this.btn_poslednji.Name = "btn_poslednji";
             this.btn_poslednji.Size = new System.Drawing.Size(91, 32);
@@ -262,7 +262,7 @@
             // 
             // btn_dodaj
             // 
-            this.btn_dodaj.Location = new System.Drawing.Point(564, 193);
+            this.btn_dodaj.Location = new System.Drawing.Point(617, 194);
             this.btn_dodaj.Margin = new System.Windows.Forms.Padding(2);
             this.btn_dodaj.Name = "btn_dodaj";
             this.btn_dodaj.Size = new System.Drawing.Size(53, 32);
@@ -273,7 +273,7 @@
             // 
             // btn_izmeni
             // 
-            this.btn_izmeni.Location = new System.Drawing.Point(674, 193);
+            this.btn_izmeni.Location = new System.Drawing.Point(727, 194);
             this.btn_izmeni.Margin = new System.Windows.Forms.Padding(2);
             this.btn_izmeni.Name = "btn_izmeni";
             this.btn_izmeni.Size = new System.Drawing.Size(53, 32);
@@ -284,7 +284,7 @@
             // 
             // btn_obrisi
             // 
-            this.btn_obrisi.Location = new System.Drawing.Point(437, 193);
+            this.btn_obrisi.Location = new System.Drawing.Point(490, 194);
             this.btn_obrisi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_obrisi.Name = "btn_obrisi";
             this.btn_obrisi.Size = new System.Drawing.Size(53, 32);
@@ -295,7 +295,7 @@
             // 
             // btn_osvezi
             // 
-            this.btn_osvezi.Location = new System.Drawing.Point(795, 193);
+            this.btn_osvezi.Location = new System.Drawing.Point(848, 194);
             this.btn_osvezi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_osvezi.Name = "btn_osvezi";
             this.btn_osvezi.Size = new System.Drawing.Size(53, 32);
