@@ -10,7 +10,7 @@ namespace Ednevnik
 {
     class Konekcija
     {
-        static public SqlConnection Povezi()
+        static public SqlConnection Connect()
         {
             //string CS = "Data Source = LAPTOP-FGQM75PR\\SQLEXPRESS; Initial Catalog = ednevnik; Integrated Security = True";
             string CS = ConfigurationManager.ConnectionStrings["home"].ConnectionString;

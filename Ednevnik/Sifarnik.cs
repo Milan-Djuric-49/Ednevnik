@@ -24,7 +24,7 @@ namespace Ednevnik
 
         private void Sifarnik_Load(object sender, EventArgs e)
         {
-            adapter = new SqlDataAdapter("SELECT * FROM " + ime_tabele, Konekcija.Povezi());
+            adapter = new SqlDataAdapter("SELECT * FROM " + ime_tabele, Konekcija.Connect());
             tabela = new DataTable();
             adapter.Fill(tabela);
             dataGridView1.DataSource = tabela;

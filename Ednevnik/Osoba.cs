@@ -21,15 +21,15 @@ namespace Ednevnik
             InitializeComponent();
         }
 
-        private void Ucitaj_Podatke()
+        private void Load_Data()
         {
-            SqlConnection veza = Konekcija.Povezi();
+            SqlConnection veza = Konekcija.Connect();
             SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Osoba", veza);
             tabela = new DataTable();
             adapter.Fill(tabela);
         }
 
-        private void Txt_Ucitaj()
+        private void Txt_Load()
         {
             if (tabela.Rows.Count != 0)
             {
@@ -43,27 +43,27 @@ namespace Ednevnik
                 txt_uloga.Text = tabela.Rows[broj_sloga]["uloga"].ToString();
 
 
-                btn_obrisi.Enabled = true;
+                btn_delete.Enabled = true;
                 if (broj_sloga == 0)
                 {
-                    btn_prvi.Enabled = false;
-                    btn_prethodni.Enabled = false;
+                    btn_first.Enabled = false;
+                    btn_prev.Enabled = false;
                 }
                 else
                 {
-                    btn_prvi.Enabled = true;
-                    btn_prethodni.Enabled = true;
+                    btn_first.Enabled = true;
+                    btn_prev.Enabled = true;
                 }
 
                 if (broj_sloga == tabela.Rows.Count - 1)
                 {
-                    btn_poslednji.Enabled = false;
-                    btn_sledeci.Enabled = false;
+                    btn_last.Enabled = false;
+                    btn_next.Enabled = false;
                 }
                 else
                 {
-                    btn_poslednji.Enabled = true;
-                    btn_sledeci.Enabled = true;
+                    btn_last.Enabled = true;
+                    btn_next.Enabled = true;
                 }
             }
             else
@@ -77,46 +77,46 @@ namespace Ednevnik
                 txt_pass.Text = "";
                 txt_uloga.Text = "";
 
-                btn_prvi.Enabled = false;
-                btn_prethodni.Enabled = false;
-                btn_poslednji.Enabled = false;
-                btn_sledeci.Enabled = false;
-                btn_izmeni.Enabled = false;
-                btn_obrisi.Enabled = false;
+                btn_first.Enabled = false;
+                btn_prev.Enabled = false;
+                btn_last.Enabled = false;
+                btn_next.Enabled = false;
+                btn_update.Enabled = false;
+                btn_delete.Enabled = false;
             }
         }
 
         private void Osoba_Load(object sender, EventArgs e)
         {
-            Ucitaj_Podatke();
-            Txt_Ucitaj();
+            Load_Data();
+            Txt_Load();
         }
 
-        private void btn_prvi_Click(object sender, EventArgs e)
+        private void btn_first_Click(object sender, EventArgs e)
         {
             broj_sloga = 0;
-            Txt_Ucitaj();
+            Txt_Load();
         }
 
-        private void btn_poslednji_Click(object sender, EventArgs e)
+        private void btn_last_Click(object sender, EventArgs e)
         {
             broj_sloga = tabela.Rows.Count - 1;
-            Txt_Ucitaj();
+            Txt_Load();
         }
 
-        private void btn_prethodni_Click(object sender, EventArgs e)
+        private void btn_prev_Click(object sender, EventArgs e)
         {
             broj_sloga--;
-            Txt_Ucitaj();
+            Txt_Load();
         }
 
-        private void btn_sledeci_Click(object sender, EventArgs e)
+        private void btn_next_Click(object sender, EventArgs e)
         {
             broj_sloga++;
-            Txt_Ucitaj();
+            Txt_Load();
         }
 
-        private void btn_dodaj_Click(object sender, EventArgs e)
+        private void btn_insert_Click(object sender, EventArgs e)
         {
             /*INSERT INTO Osoba(ime, prezime, adresa, jmbg, email, pass, uloga)
             VALUES('Marko', 'Lazic', 'Savska 10', '1234564312341', 'markol@gmail.com',
@@ -129,8 +129,7 @@ namespace Ednevnik
             naredba.Append(txt_email.Text + "', '");
             naredba.Append(txt_pass.Text + "', '");
             naredba.Append(txt_uloga.Text + "')");
-            //MessageBox.Show(naredba.ToString());
-            SqlConnection veza = Konekcija.Povezi();
+            SqlConnection veza = Konekcija.Connect();
             SqlCommand komanda = new SqlCommand(naredba.ToString(), veza);
 
             try
@@ -144,12 +143,12 @@ namespace Ednevnik
                 MessageBox.Show(greska.Message);
             }
 
-            Ucitaj_Podatke();
+            Load_Data();
             broj_sloga = tabela.Rows.Count - 1;
-            Txt_Ucitaj();
+            Txt_Load();
         }
 
-        private void btn_izmeni_Click(object sender, EventArgs e)
+        private void btn_update_Click(object sender, EventArgs e)
         {
             /*UPDATE Osoba SET ime = 'Marko', prezime = 'Peric',
             adresa = 'Studenac 8', jmbg = '1234567891234', 
@@ -165,7 +164,7 @@ namespace Ednevnik
             naredba.Append("uloga = '" + txt_uloga.Text + "' ");
             naredba.Append("WHERE id = " + txt_id.Text);
             //MessageBox.Show(naredba.ToString());
-            SqlConnection veza = Konekcija.Povezi();
+            SqlConnection veza = Konekcija.Connect();
             SqlCommand komanda = new SqlCommand(naredba.ToString(), veza);
 
             try
@@ -179,15 +178,14 @@ namespace Ednevnik
                 MessageBox.Show(greska.Message);
             }
 
-            Ucitaj_Podatke();
-            Txt_Ucitaj();
+            Load_Data();
+            Txt_Load();
         }
 
-        private void btn_obrisi_Click(object sender, EventArgs e)
+        private void btn_delete_Click(object sender, EventArgs e)
         {
             string naredba = "DELETE FROM Osoba WHERE id = " + txt_id.Text;
-            //MessageBox.Show(naredba.ToString());
-            SqlConnection veza = Konekcija.Povezi();
+            SqlConnection veza = Konekcija.Connect();
             SqlCommand komanda = new SqlCommand(naredba, veza);
             Boolean brisano = false;
             try
@@ -204,17 +202,17 @@ namespace Ednevnik
 
             if (brisano)
             {
-                Ucitaj_Podatke();
+                Load_Data();
                 if (broj_sloga > 0) broj_sloga--;
 
-                Txt_Ucitaj();
+                Txt_Load();
             }
         }
 
-        private void btn_osvezi_Click(object sender, EventArgs e)
+        private void btn_refresh_Click(object sender, EventArgs e)
         {
-            Ucitaj_Podatke();
-            Txt_Ucitaj();
+            Load_Data();
+            Txt_Load();
         }
 
         private void lbl_ime_Click(object sender, EventArgs e)

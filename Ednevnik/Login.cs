@@ -30,7 +30,7 @@ namespace Ednevnik
 
                 try
                 {
-                    SqlConnection veza = Konekcija.Povezi();
+                    SqlConnection veza = Konekcija.Connect();
                     SqlCommand komanda = new SqlCommand("SELECT * FROM osoba where email =@username", veza);
                     komanda.Parameters.AddWithValue("@username", txt_name.Text);
                     SqlDataAdapter adapter = new SqlDataAdapter(komanda);
@@ -73,5 +73,6 @@ namespace Ednevnik
         {
 
         }
+
     }
 }

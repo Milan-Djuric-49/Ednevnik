@@ -38,10 +38,9 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(178, 249);
+            this.button1.Location = new System.Drawing.Point(183, 211);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 42);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
@@ -50,52 +49,49 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(99, 48);
+            this.label2.Location = new System.Drawing.Point(146, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(319, 24);
+            this.label2.Size = new System.Drawing.Size(183, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Dobrodosli! Da biste nastavili unesite:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 158);
+            this.label1.Location = new System.Drawing.Point(100, 155);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 24);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Sifra";
+            this.label1.Text = "Lozinka";
             // 
             // txt_ime
             // 
             this.txt_ime.AutoSize = true;
-            this.txt_ime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ime.Location = new System.Drawing.Point(37, 99);
+            this.txt_ime.Location = new System.Drawing.Point(100, 96);
             this.txt_ime.Name = "txt_ime";
-            this.txt_ime.Size = new System.Drawing.Size(45, 24);
+            this.txt_ime.Size = new System.Drawing.Size(35, 13);
             this.txt_ime.TabIndex = 8;
-            this.txt_ime.Text = "Mejl";
+            this.txt_ime.Text = "E-mail";
             // 
             // txt_passw
             // 
-            this.txt_passw.Location = new System.Drawing.Point(103, 162);
+            this.txt_passw.Location = new System.Drawing.Point(149, 152);
             this.txt_passw.Name = "txt_passw";
-            this.txt_passw.Size = new System.Drawing.Size(315, 20);
+            this.txt_passw.Size = new System.Drawing.Size(180, 20);
             this.txt_passw.TabIndex = 7;
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(103, 104);
+            this.txt_name.Location = new System.Drawing.Point(149, 94);
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(315, 20);
+            this.txt_name.Size = new System.Drawing.Size(180, 20);
             this.txt_name.TabIndex = 6;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 412);
+            this.ClientSize = new System.Drawing.Size(449, 292);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

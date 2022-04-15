@@ -40,6 +40,7 @@
             this.skolskeGodineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.predmetiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.osobeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.raspodelaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +75,8 @@
             // 
             // jedanSaFKToolStripMenuItem
             // 
+            this.jedanSaFKToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.raspodelaToolStripMenuItem});
             this.jedanSaFKToolStripMenuItem.Name = "jedanSaFKToolStripMenuItem";
             this.jedanSaFKToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.jedanSaFKToolStripMenuItem.Text = "Jedan SaFK";
@@ -139,6 +142,13 @@
             this.osobeToolStripMenuItem2.Text = "Osobe";
             this.osobeToolStripMenuItem2.Click += new System.EventHandler(this.osobeToolStripMenuItem2_Click);
             // 
+            // raspodelaToolStripMenuItem
+            // 
+            this.raspodelaToolStripMenuItem.Name = "raspodelaToolStripMenuItem";
+            this.raspodelaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.raspodelaToolStripMenuItem.Text = "Raspodela";
+            this.raspodelaToolStripMenuItem.Click += new System.EventHandler(this.raspodelaToolStripMenuItem_Click);
+            // 
             // Glavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,5 +182,6 @@
         private System.Windows.Forms.ToolStripMenuItem skolskeGodineToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem predmetiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem osobeToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem raspodelaToolStripMenuItem;
     }
 }
