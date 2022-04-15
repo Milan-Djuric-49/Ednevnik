@@ -10,3 +10,4 @@ C:\Users\pedja\OneDrive\Documents\GitHub\Ekranska-forma-osoba\Ednevnik\obj\Debug
 C:\Users\pedja\OneDrive\Documents\GitHub\Ekranska-forma-osoba\Ednevnik\obj\Debug\Ednevnik.pdb
 C:\Users\pedja\OneDrive\Documents\GitHub\Ekranska-forma-osoba\Ednevnik\obj\Debug\Ednevnik.Glavna.resources
 C:\Users\pedja\OneDrive\Documents\GitHub\Ekranska-forma-osoba\Ednevnik\obj\Debug\Ednevnik.Osoba.resources
+C:\Users\pedja\OneDrive\Documents\GitHub\Ekranska-forma-osoba\Ednevnik\obj\Debug\Ednevnik.Sifarnik.resources
