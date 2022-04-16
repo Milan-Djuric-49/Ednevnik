@@ -25,7 +25,8 @@ namespace Ednevnik
 
         private void oceneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Ocena frm_ocena = new Ocena();
+            frm_ocena.Show();
         }
 
         private void osobeToolStripMenuItem_Click(object sender, EventArgs e)
