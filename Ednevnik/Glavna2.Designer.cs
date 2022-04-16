@@ -84,6 +84,7 @@
             this.odeljenjeToolStripMenuItem.Name = "odeljenjeToolStripMenuItem";
             this.odeljenjeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.odeljenjeToolStripMenuItem.Text = "Upisnica";
+            this.odeljenjeToolStripMenuItem.Click += new System.EventHandler(this.odeljenjeToolStripMenuItem_Click);
             // 
             // sifarniciToolStripMenuItem
             // 

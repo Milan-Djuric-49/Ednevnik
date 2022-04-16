@@ -62,5 +62,11 @@ namespace Ednevnik
         {
             Application.Exit();
         }
+
+        private void odeljenjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Upisnica frm_upisnica = new Upisnica();
+            frm_upisnica.Show();
+        }
     }
 }

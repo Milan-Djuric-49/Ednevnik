@@ -45,7 +45,7 @@
             // 
             // txt_upisnica
             // 
-            this.txt_upisnica.Location = new System.Drawing.Point(92, 106);
+            this.txt_upisnica.Location = new System.Drawing.Point(48, 98);
             this.txt_upisnica.Name = "txt_upisnica";
             this.txt_upisnica.Size = new System.Drawing.Size(121, 20);
             this.txt_upisnica.TabIndex = 0;
@@ -53,23 +53,25 @@
             // cmb_godina
             // 
             this.cmb_godina.FormattingEnabled = true;
-            this.cmb_godina.Location = new System.Drawing.Point(219, 106);
+            this.cmb_godina.Location = new System.Drawing.Point(175, 98);
             this.cmb_godina.Name = "cmb_godina";
             this.cmb_godina.Size = new System.Drawing.Size(121, 21);
             this.cmb_godina.TabIndex = 1;
+            this.cmb_godina.SelectedValueChanged += new System.EventHandler(this.cmb_godina_SelectedValueChanged);
             // 
             // cmb_odeljenje
             // 
             this.cmb_odeljenje.FormattingEnabled = true;
-            this.cmb_odeljenje.Location = new System.Drawing.Point(346, 106);
+            this.cmb_odeljenje.Location = new System.Drawing.Point(302, 98);
             this.cmb_odeljenje.Name = "cmb_odeljenje";
             this.cmb_odeljenje.Size = new System.Drawing.Size(121, 21);
             this.cmb_odeljenje.TabIndex = 2;
+            this.cmb_odeljenje.SelectedValueChanged += new System.EventHandler(this.cmb_odeljenje_SelectedValueChanged);
             // 
             // cmb_ucenik
             // 
             this.cmb_ucenik.FormattingEnabled = true;
-            this.cmb_ucenik.Location = new System.Drawing.Point(473, 106);
+            this.cmb_ucenik.Location = new System.Drawing.Point(429, 98);
             this.cmb_ucenik.Name = "cmb_ucenik";
             this.cmb_ucenik.Size = new System.Drawing.Size(121, 21);
             this.cmb_ucenik.TabIndex = 3;
@@ -77,7 +79,7 @@
             // lbl_id
             // 
             this.lbl_id.AutoSize = true;
-            this.lbl_id.Location = new System.Drawing.Point(89, 72);
+            this.lbl_id.Location = new System.Drawing.Point(45, 64);
             this.lbl_id.Name = "lbl_id";
             this.lbl_id.Size = new System.Drawing.Size(16, 13);
             this.lbl_id.TabIndex = 4;
@@ -86,7 +88,7 @@
             // lbl_godina
             // 
             this.lbl_godina.AutoSize = true;
-            this.lbl_godina.Location = new System.Drawing.Point(216, 72);
+            this.lbl_godina.Location = new System.Drawing.Point(172, 64);
             this.lbl_godina.Name = "lbl_godina";
             this.lbl_godina.Size = new System.Drawing.Size(41, 13);
             this.lbl_godina.TabIndex = 5;
@@ -95,7 +97,7 @@
             // lbl_odeljenje
             // 
             this.lbl_odeljenje.AutoSize = true;
-            this.lbl_odeljenje.Location = new System.Drawing.Point(343, 72);
+            this.lbl_odeljenje.Location = new System.Drawing.Point(299, 64);
             this.lbl_odeljenje.Name = "lbl_odeljenje";
             this.lbl_odeljenje.Size = new System.Drawing.Size(51, 13);
             this.lbl_odeljenje.TabIndex = 6;
@@ -104,7 +106,7 @@
             // lbl_ucenik
             // 
             this.lbl_ucenik.AutoSize = true;
-            this.lbl_ucenik.Location = new System.Drawing.Point(470, 72);
+            this.lbl_ucenik.Location = new System.Drawing.Point(426, 64);
             this.lbl_ucenik.Name = "lbl_ucenik";
             this.lbl_ucenik.Size = new System.Drawing.Size(41, 13);
             this.lbl_ucenik.TabIndex = 7;
@@ -117,33 +119,37 @@
             this.grid_upisnica.Name = "grid_upisnica";
             this.grid_upisnica.Size = new System.Drawing.Size(662, 227);
             this.grid_upisnica.TabIndex = 8;
+            this.grid_upisnica.CurrentCellChanged += new System.EventHandler(this.grid_upisnica_CurrentCellChanged);
             // 
             // btn_insert
             // 
-            this.btn_insert.Location = new System.Drawing.Point(197, 150);
+            this.btn_insert.Location = new System.Drawing.Point(175, 142);
             this.btn_insert.Name = "btn_insert";
             this.btn_insert.Size = new System.Drawing.Size(75, 23);
             this.btn_insert.TabIndex = 9;
             this.btn_insert.Text = "Dodaj";
             this.btn_insert.UseVisualStyleBackColor = true;
+            this.btn_insert.Click += new System.EventHandler(this.btn_insert_Click);
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(303, 150);
+            this.btn_update.Location = new System.Drawing.Point(302, 142);
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(75, 23);
             this.btn_update.TabIndex = 10;
             this.btn_update.Text = "Izmeni";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(413, 150);
+            this.btn_delete.Location = new System.Drawing.Point(429, 142);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(75, 23);
             this.btn_delete.TabIndex = 11;
             this.btn_delete.Text = "Brisi";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // Upisnica
             // 
@@ -164,6 +170,7 @@
             this.Controls.Add(this.txt_upisnica);
             this.Name = "Upisnica";
             this.Text = "Upisnica";
+            this.Load += new System.EventHandler(this.Upisnica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_upisnica)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
