@@ -86,6 +86,7 @@
             this.cmb_Odeljenje.Name = "cmb_Odeljenje";
             this.cmb_Odeljenje.Size = new System.Drawing.Size(121, 21);
             this.cmb_Odeljenje.TabIndex = 3;
+            this.cmb_Odeljenje.SelectedValueChanged += new System.EventHandler(this.cmb_Odeljenje_SelectedValueChanged);
             // 
             // cmb_Ucenik
             // 
@@ -113,6 +114,7 @@
             // 
             // txt_Id
             // 
+            this.txt_Id.Enabled = false;
             this.txt_Id.Location = new System.Drawing.Point(295, 106);
             this.txt_Id.Name = "txt_Id";
             this.txt_Id.Size = new System.Drawing.Size(121, 20);
@@ -126,15 +128,17 @@
             this.btn_Insert.TabIndex = 8;
             this.btn_Insert.Text = "Dodaj";
             this.btn_Insert.UseVisualStyleBackColor = true;
+            this.btn_Insert.Click += new System.EventHandler(this.btn_Insert_Click);
             // 
             // btn_Update
             // 
-            this.btn_Update.Location = new System.Drawing.Point(574, 74);
+            this.btn_Update.Location = new System.Drawing.Point(574, 76);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(75, 23);
             this.btn_Update.TabIndex = 9;
             this.btn_Update.Text = "Izmeni";
             this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
             // btn_Delete
             // 
@@ -144,6 +148,7 @@
             this.btn_Delete.TabIndex = 10;
             this.btn_Delete.Text = "Obrisi";
             this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // Grid_Ocene
             // 
@@ -152,6 +157,7 @@
             this.Grid_Ocene.Name = "Grid_Ocene";
             this.Grid_Ocene.Size = new System.Drawing.Size(608, 240);
             this.Grid_Ocene.TabIndex = 11;
+            this.Grid_Ocene.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_Ocene_CellClick);
             // 
             // lbl_Godina
             // 
